@@ -1,6 +1,7 @@
 install.packages("tidyverse")
 library(tidyverse)
 
+#Put your own file path here for data!!!!!!!!!!!!!!!
 data_OG <- read.csv("")
 
 data_xp <- data.frame(data_OG)
