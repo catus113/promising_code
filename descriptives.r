@@ -8,7 +8,9 @@ desc <- data_xp |>
     across(all_of(vars),
            list(mean   = \(x) mean(x, na.rm = TRUE),
                 sd     = \(x) sd(x, na.rm = TRUE),
-                median = \(x) median(x, na.rm = TRUE)))
+                median = \(x) median(x, na.rm = TRUE),
+                skew = \(x) psych::skew(x, na.rm = TRUE),
+                kurtosis = \(x) psych::kurtosi(x, na.rm = TRUE)))
   )
 desc
 
@@ -26,7 +28,9 @@ desc2 <- data_xp |>
     across(all_of(section1),
            list(mean   = \(x) mean(x, na.rm = TRUE),
                 sd     = \(x) sd(x, na.rm = TRUE),
-                median = \(x) median(x, na.rm = TRUE)))
+                median = \(x) median(x, na.rm = TRUE),
+                skew = \(x) psych::skew(x, na.rm = TRUE),
+                kurtosis = \(x) psych::kurtosi(x, na.rm = TRUE)))
   )
 desc2
 
