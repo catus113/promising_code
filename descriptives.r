@@ -1,5 +1,7 @@
 install.packages("gtsummary")
 library(gtsummary)
+install.packages("psych")
+library(psych)
 
 desc <- data_xp |>
   group_by(Condition) |>
