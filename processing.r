@@ -1,7 +1,7 @@
 install.packages("tidyverse")
 library(tidyverse)
 
-data_OG <- read.csv("C:/Users/nickl/Downloads/Promising_2_Gamma_November+4,+2026_14.05.csv")
+data_OG <- read.csv("")
 
 data_xp <- data.frame(data_OG)
 
